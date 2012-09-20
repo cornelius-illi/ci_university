@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the University Manager extension for TCA-Config und Plugin-Labels</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="ci_university.plugin.courseSingle">Single-View Page for Course-Records: </label>
+			<label index="ci_university.plugin.personSingle">Single-View Page for Person-Records: </label>
+			<label index="ci_university.plugin.confSingle">Single-View Configuration</label>
+			<label index="ci_university.plugin.confCourse">Course-Configuration</label>
+			<label index="ci_university.plugin.confExtJS">Activate ExtJS/ Ajax?</label>
+			<label index="ci_university.tca.course.basic">Basic information (synced)</label>
+			<label index="ci_university.tca.course.additional">Additional information</label>
+			<label index="ci_university.tca.course.texts">Texts</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="ci_university.plugin.courseSingle">Einzelansichts-Seite für LV-Datensätze: </label>
+			<label index="ci_university.plugin.personSingle">Einzelansichts-Seite für Personen-Datensätze: </label>
+			<label index="ci_university.plugin.confSingle">Einzelansichts-Konfiguration</label>
+			<label index="ci_university.plugin.confCourse">LV-Configuration</label>
+			<label index="ci_university.plugin.confExtJS">Aktiviere ExtJS/ Ajax?</label>
+			<label index="ci_university.tca.course.basic">Basis Informationen (synced)</label>
+			<label index="ci_university.tca.course.additional">Zusätzliche Informationen</label>
+			<label index="ci_university.tca.course.texts">Texte</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,2 @@
+# cat=basic//; type=int; label=UID of the page, where the TS-Template is stored (explaination see documentation)
+tspage = 

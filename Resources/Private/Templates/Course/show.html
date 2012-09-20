@@ -1,0 +1,86 @@
+{namespace ci=Tx_CiUniversity_ViewHelpers}
+<f:layout name="default" />
+
+<f:section name="content">
+	<div class="tx-ciuniversity-course"> 
+		<h1>{course.title} ({course.semester})</h1>
+		<f:translate key="lecturer" />: <i><ci:personLink uri="{course.lecturer.url}" pageUid="{pSPid}" person="{course.lecturer}">{course.lecturer.fullname}</ci:personLink> 
+		<f:if condition="{course.lecturer.chairs}">
+			<f:if condition="{course.lecturer.firstChairUrl}">
+				<f:then>
+					<f:link.external uri="{course.lecturer.firstChairUrl}" >({course.lecturer.firstChairName})</f:link.external>
+				</f:then>
+				<f:else>
+					({course.lecturer.firstChairName})
+				</f:else>
+			</f:if>
+		</f:if></i>
+		<f:if condition="{course.otherLecturers}">
+			<f:for each="{course.otherLecturers}" as="lecturer">, 
+				<i><ci:personLink uri="{lecturer.url}" pageUid="{pSPid}" person="{lecturer}">{lecturer.fullname}</ci:personLink> 
+				<f:if condition="{lecturer.chairs}">
+					<f:if condition="{lecturer.firstChairUrl}">
+					<f:then>
+						<f:link.external uri="{lecturer.firstChairUrl}" >({lecturer.firstChairName})</f:link.external>
+					</f:then>
+					<f:else>
+						({lecturer.firstChairName})
+					</f:else>
+					</f:if>
+				</f:if></i>
+			</f:for>
+		</f:if>
+		<f:if condition="{course.tutors}">
+			<br />
+			<f:translate key="tutors" />: <i><f:for each="{course.tutors}" as="tutor">
+				<ci:personLink uri="{tutor.url}" pageUid="{pSPid}" person="{tutor}">{tutor.fullname}</ci:personLink>
+			</f:for></i>
+		</f:if>
+		<br />
+		<f:if condition="{showTexts}">
+			<f:then>
+				<f:if condition="{course.description}">
+					<h2><f:translate key="description" /></h2>
+					<f:format.html>{course.description}</f:format.html>
+				</f:if>
+				<f:if condition="{course.requirements}">
+					<h2><f:translate key="requirements" /></h2>
+					<f:format.html>{course.requirements}</f:format.html>
+				</f:if>
+				<f:if condition="{course.literature}">
+					<h2><f:translate key="literature" /></h2>
+					<f:format.html>{course.literature}</f:format.html>
+				</f:if>
+				<f:if condition="{course.examination}">
+					<h2><f:translate key="examination" /></h2>
+					<f:format.html>{course.examination}</f:format.html>
+				</f:if>
+				<f:if condition="{course.dates}">
+					<h2><f:translate key="dates" /></h2>
+					<f:format.html>{course.dates}</f:format.html>
+				</f:if>
+			</f:then>
+			<f:else>
+				<p>{notice}: <f:link.page pageUid="{course.url}"><f:uri.page pageUid="{course.url}" absolute="true" /></f:link.page></p>
+			</f:else>
+		</f:if>
+		<h2><f:translate key="general_information" /></h2>
+		<ul class="tx-ciuniversity-course-general-info">
+			<li><p><span><f:translate key="sws" />:</span>{course.sws}</p></li>
+			<li><p><span><f:translate key="ects" />:</span>{course.credits}</p></li>
+			<li><p><span><f:translate key="enrolmentDeadline" />:</span>{course.enrolmentDeadline}</p></li>
+			<li><p><span><f:translate key="program" />:</span>{course.program}</p></li>
+			<li><p><span><f:translate key="teachingForm" />:</span>{course.teachingForm}</p></li>
+			<li><p><span><f:translate key="enrolmentType" />:</span>{course.enrolmentType}</p></li>
+		</ul>
+		<f:if condition="{courses.modules}">
+			<h2><f:translate key="modules" /></h2>
+			<ul>
+			<f:for each="{course.modules}" as="module">
+				<li>{module.title} ({module.modulegroup})</li>
+			</f:for>
+			</ul>
+		</f:if>
+		<p><a href="javascript:history.back()">Zurück</a></p>
+	</div>
+</f:section>

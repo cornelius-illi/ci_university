@@ -1,0 +1,52 @@
+{namespace ci=Tx_CiUniversity_ViewHelpers}
+<f:layout name="default" />
+
+<f:section name="content">
+	<div class="tx-ciuniversity-person"> 	
+		<!-- Mode selector (menu for list): --> 
+		<div class="tx-ciuniversity-person-search-mode-selector"> 
+			<table> 
+				<tr> 
+					<f:for each="{smodes}" as="smode">
+						<td><p><f:link.action action="index" arguments="{mode: smode}">{smode}</f:link.action></p></td>
+					</f:for>
+				</tr> 
+			</table> 
+		</div> 
+		<!-- List search box: --> 
+		<div class="tx-ciuniversity-person-searchbox"> 
+			<f:form name="searchform" action="index" method="post">
+				<table>
+					<tr>
+						<td><f:form.textbox class="tx-ciuniversity-person-searchbox-sword" name="sword" id="sword" value="{vars.sword}" /></td>
+						<td><f:form.submit value="Suche" class="tx-ciuniversity-button" /></td>
+					</tr>	
+				</table>
+			</f:form> 
+		</div> 
+		<!-- Record list: --> 
+		<div class="tx-ciuniversity-person-list"> 
+			<table class="tx-ciuniversity-table"> 
+				<tr class="tx-ciuniversity-table-row-odd"> 
+					<td><p><b><f:translate key="name" /></b></p></td> 
+					<td><p><b><f:translate key="room" /></b></p></td> 
+					<td><p><b><f:translate key="phone" /></b></p></td> 
+					<td><p><b><f:translate key="fax" /></b></p></td> 
+				</tr>
+				<f:for each="{persons.result}" as="person">
+					<f:cycle values="{0: 'even', 1: 'odd'}" as="zebraClass">
+					<tr class="tx-ciuniversity-table-row-{zebraClass}">
+						<td><ci:personLink uri="{person.url}" pageUid="{pSPid}" person="{person}">{person.fullname}</ci:personLink></td>
+						<td>{person.room}</td>
+						<td>{person.phone}</td>
+						<td>{person.fax}</td>
+					</tr>
+					</f:cycle>
+				</f:for>
+			</table> 
+		</div>
+		<!-- List browsing box: --> 
+		<div class="db-results-pager">
+			<ci:pagination page="{persons.page}" pageCount="{persons.pageCount}" count="{persons.count}" pivars="{vars}" itemsOnPage="{items}" />
+		</div>
+</f:section>

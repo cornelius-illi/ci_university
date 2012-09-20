@@ -1,0 +1,10 @@
+<div class="tx-ciuniversity">
+	<f:if condition="{error}">
+		<f:then>
+			<f:flashMessages id="dialog" title="Hinweis!"/>
+		</f:then>
+		<f:else>
+			<f:render section="content" />
+		</f:else>
+	</f:if>	
+</div>

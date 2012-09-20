@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'ci_university'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_ciuniversity_domain_model_course">Course</label>
+			<label index="tx_ciuniversity_domain_model_course.title">Course-title</label>
+			<label index="tx_ciuniversity_domain_model_module">Module</label>
+			<label index="tx_ciuniversity_domain_model_module.title">Module-title</label>
+			<label index="tx_ciuniversity_domain_model_module.modulegroup">Module-group</label>
+			<label index="tx_ciuniversity_domain_model_module.identifier">Module-ID</label>
+			<label index="tx_ciuniversity_domain_model_chair">Chair</label>
+			<label index="tx_ciuniversity_domain_model_chair.title">chair name</label>
+			<label index="tx_ciuniversity_domain_model_chair.url">URL to chair</label>
+			<label index="tx_ciuniversity_domain_model_chair.email">Mail/ Mailing-List of the chair</label>
+			<label index="tx_ciuniversity_domain_model_chair.head">Head of chair</label>
+			<label index="tx_ciuniversity_domain_model_person">Person</label>
+			<label index="tx_ciuniversity_domain_model_person.lastname">Lastname</label>
+			<label index="tx_ciuniversity_domain_model_person.firstname">firstname</label>
+			<label index="tx_ciuniversity_domain_model_person.customline">A line of custom text</label>
+			<label index="tx_ciuniversity_domain_model_person.actitle">Academic title</label>
+			<label index="tx_ciuniversity_domain_model_person.phone">Phone</label>
+			<label index="tx_ciuniversity_domain_model_person.fax">Fax</label>
+			<label index="tx_ciuniversity_domain_model_person.room">Room</label>
+			<label index="tx_ciuniversity_domain_model_person.email">Email</label>
+			<label index="tx_ciuniversity_domain_model_person.sections">Sections</label>
+			<label index="tx_ciuniversity_domain_model_person.chair">Chair</label>
+			<label index="tx_ciuniversity_domain_model_person.customtext">Customtext</label>
+			<label index="tx_ciuniversity_domain_model_person.image">Image</label>
+			<label index="tx_ciuniversity_domain_model_person.url">Personal Website</label>	
+			<label index="tx_ciuniversity_domain_model_course">Course</label>
+			<label index="tx_ciuniversity_domain_model_course.unitid">UnitID</label>
+			<label index="tx_ciuniversity_domain_model_course.title">Course title</label>
+			<label index="tx_ciuniversity_domain_model_course.module">Course module</label>
+			<label index="tx_ciuniversity_domain_model_course.semester">Semester</label>
+			<label index="tx_ciuniversity_domain_model_course.credits">Credits</label>
+			<label index="tx_ciuniversity_domain_model_course.sws">Weekly Hours</label>
+			<label index="tx_ciuniversity_domain_model_course.program">Program</label>
+			<label index="tx_ciuniversity_domain_model_course.lecturer">Lecturer (main, synced)</label>
+			<label index="tx_ciuniversity_domain_model_course.teaching_form">Teaching form</label>
+			<label index="tx_ciuniversity_domain_model_course.graded">Graded</label>
+			<label index="tx_ciuniversity_domain_model_course.enrolment_deadline">Enrolement period</label>
+			<label index="tx_ciuniversity_domain_model_course.enrolment_type">Enrolment type</label>
+			<label index="tx_ciuniversity_domain_model_course.max_participants">Max. participants</label>
+			<label index="tx_ciuniversity_domain_model_course.other_lecturers">Other Lecturers</label>
+			<label index="tx_ciuniversity_domain_model_course.chair">Chair</label>
+			<label index="tx_ciuniversity_domain_model_course.tutors">Tutors</label>
+			<label index="tx_ciuniversity_domain_model_course.description">Description</label>
+			<label index="tx_ciuniversity_domain_model_course.requirements">Requirements</label>
+			<label index="tx_ciuniversity_domain_model_course.examination">Examination</label>
+			<label index="tx_ciuniversity_domain_model_course.literature">Literature</label>
+			<label index="tx_ciuniversity_domain_model_course.learning">Learning</label>
+			<label index="tx_ciuniversity_domain_model_course.dates">Dates</label>
+			<label index="tx_ciuniversity_domain_model_course.url">Course Website</label>
+			<label index="tx_ciuniversity_domain_model_course.only_use_course_page_contents">Do not display contents here, just link to course Website</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_ciuniversity_domain_model_course">Lehrveranstaltung</label>
+			<label index="tx_ciuniversity_domain_model_course.title">Lehrveranstaltungsname</label>
+			<label index="tx_ciuniversity_domain_model_module">Modul</label>
+			<label index="tx_ciuniversity_domain_model_module.title">Modulname</label>
+			<label index="tx_ciuniversity_domain_model_module.modulegroup">Modulgruppe</label>
+			<label index="tx_ciuniversity_domain_model_module.identifier">Modul-Kennung</label>
+			<label index="tx_ciuniversity_domain_model_chair">Lehrstuhl</label>
+			<label index="tx_ciuniversity_domain_model_chair.title">Lehrstuhlname</label>
+			<label index="tx_ciuniversity_domain_model_chair.url">URL zum Lehrstuhl</label>
+			<label index="tx_ciuniversity_domain_model_chair.email">Mail/ Mailing-List des Lehrstuhls</label>
+			<label index="tx_ciuniversity_domain_model_chair.head">Lehrstuhl-Leiter</label>
+			<label index="tx_ciuniversity_domain_model_person">Person</label>
+			<label index="tx_ciuniversity_domain_model_person.lastname">Nachname</label>
+			<label index="tx_ciuniversity_domain_model_person.firstname">Vorname</label>
+			<label index="tx_ciuniversity_domain_model_person.customline">Eine Zeile beschreibender Text</label>
+			<label index="tx_ciuniversity_domain_model_person.actitle">Akademischer Title</label>
+			<label index="tx_ciuniversity_domain_model_person.phone">Telefon</label>
+			<label index="tx_ciuniversity_domain_model_person.fax">Fax</label>
+			<label index="tx_ciuniversity_domain_model_person.room">Raum</label>
+			<label index="tx_ciuniversity_domain_model_person.email">E-Mail</label>
+			<label index="tx_ciuniversity_domain_model_person.sections">Abteilungen</label>
+			<label index="tx_ciuniversity_domain_model_person.chair">Lehrstuhl</label>
+			<label index="tx_ciuniversity_domain_model_person.customtext">Beschreibender Text</label>
+			<label index="tx_ciuniversity_domain_model_person.image">Foto</label>
+			<label index="tx_ciuniversity_domain_model_person.url">Persönliche Website</label>	
+			<label index="tx_ciuniversity_domain_model_course">Lehrveranstaltung</label>
+			<label index="tx_ciuniversity_domain_model_course.unitid">UnitID</label>
+			<label index="tx_ciuniversity_domain_model_course.title">Lehrveranstaltungstitel</label>
+			<label index="tx_ciuniversity_domain_model_course.module">Modul</label>
+			<label index="tx_ciuniversity_domain_model_course.semester">Semester</label>
+			<label index="tx_ciuniversity_domain_model_course.credits">Credits</label>
+			<label index="tx_ciuniversity_domain_model_course.sws">Semesterwochenstunden (SWS)</label>
+			<label index="tx_ciuniversity_domain_model_course.program">Programm</label>
+			<label index="tx_ciuniversity_domain_model_course.lecturer">Dozent (synchronisiert)</label>
+			<label index="tx_ciuniversity_domain_model_course.teaching_form">Lehrform</label>
+			<label index="tx_ciuniversity_domain_model_course.graded">Benotet</label>
+			<label index="tx_ciuniversity_domain_model_course.enrolment_deadline">Einschreibefrist</label>
+			<label index="tx_ciuniversity_domain_model_course.enrolment_type">Belegungsart</label>
+			<label index="tx_ciuniversity_domain_model_course.max_participants">Max. Teilnehmerzahl</label>
+			<label index="tx_ciuniversity_domain_model_course.other_lecturers">weitere Dozenten</label>
+			<label index="tx_ciuniversity_domain_model_course.chair">Lehrstuhl</label>
+			<label index="tx_ciuniversity_domain_model_course.tutors">Tutoren</label>
+			<label index="tx_ciuniversity_domain_model_course.description">Beschreibung</label>
+			<label index="tx_ciuniversity_domain_model_course.requirements">Voraussetzungen</label>
+			<label index="tx_ciuniversity_domain_model_course.examination">Leistungserfassung</label>
+			<label index="tx_ciuniversity_domain_model_course.literature">Literatur</label>
+			<label index="tx_ciuniversity_domain_model_course.learning">Lern- und Lehrformen</label>
+			<label index="tx_ciuniversity_domain_model_course.dates">Termine</label>
+			<label index="tx_ciuniversity_domain_model_course.url">Website zur Lehrveranstaltung</label>
+			<label index="tx_ciuniversity_domain_model_course.only_use_course_page_contents">Zeige anstelle der Inhalte nur Link zur Webseite</label>		
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,44 @@
+{namespace ci=Tx_CiUniversity_ViewHelpers}
+<f:layout name="default" />
+
+<f:section name="content">
+<div class="tx-ciuniversity-person-single"> 
+	<table> 
+		<tr> 
+			<td style="padding-right:10px;" rowspan="6" valign="top">
+				<f:if condition="{person.image}">
+					<f:image src="uploads/tx_ciuniversity/{person.image}" maxHeight="150" alt="{person.fullname}"/>
+				</f:if>
+			</td>
+			<td colspan="2"><p><b>{person.fullname}</b><br />{person.sections}</p></td> 	
+		</tr> 
+		<tr> 
+			<td><p><f:translate key="phone" />: </p></td> 
+			<td><p>{person.phone}</p></td> 
+		</tr> 
+		<f:if condition="{person.fax}">
+			<tr> 
+				<td><p><f:translate key="fax" />: </p></td> 
+				<td><p>{person.fax}</p></td> 
+			</tr> 
+		</f:if>
+		<tr> 
+			<td><p><f:translate key="room" />: </p></td> 
+			<td><p>{person.room}</p></td> 
+		</tr> 
+		<tr> 
+			<td><p><f:translate key="email" />: </p></td> 
+			<td><p><f:link.email email="{person.email}" /></p></td> 
+		</tr> 
+		<f:if condition="{person.chairs}">
+			<tr> 
+				<td><p><f:translate key="chairs" />: </p></td> 
+				<td><p>{person.chairsList}</p></td> 
+			</tr> 
+		</f:if>
+	</table> 
+	<p>{person.customtext}</p>
+	<p>&nbsp;</p>
+	<p><a href="javascript:history.back()">Zurück</a></p>
+</div> 
+</f:section>

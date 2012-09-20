@@ -1,0 +1,45 @@
+{namespace ci=Tx_CiUniversity_ViewHelpers}
+<f:layout name="default" />
+
+<f:section name="content">
+	<f:render partial="course_navigation" />
+	 
+	<f:for each="{courses_by_program}" as="courses" key="program" >
+	<f:if condition="{courses}">
+		<h1>{program}<f:if condition="{param}">: {param}</f:if></h1>
+		<table class="tx-ciuniversity-table" id="tx-ciuniversity-courselist-table">
+			<thead>
+				<tr class="tx-ciuniversity-table-row-odd">
+					<td class="tx-ciuniversity-table-cell-title"><strong><f:translate key="title" /></strong></td>
+					<td class="tx-ciuniversity-table-cell-lecturer"><strong><f:translate key="lecturer" /></strong></td>
+				</tr>
+			</thead>
+			<tbody>
+				<f:for each="{courses}" as="course">
+				<f:cycle values="{0: 'even', 1: 'odd'}" as="zebraClass">
+					<tr class="tx-ciuniversity-table-row-{zebraClass}">
+						<td class="tx-ciuniversity-table-cell-title">
+							<span id="tx-ciuniversity-modules-tooltip-target-{course.uid}">
+							<f:link.page class="courselink" pageUid="{cSPid}" additionalParams="{tx_ciuniversity_ciuniversity: {course: course, year: course.year}}">
+							{course.title}</f:link.page><span style="display:none;">{course.uid}</span></span>
+							<f:if condition="{course.modulesString}">
+								<span style="display:none;"><span id="tx-ciuniversity-modules-tooltip-{course.uid}">{course.modulesString}</span></span>
+							</f:if>
+							</td>
+						<td class="tx-ciuniversity-table-cell-lecturer">
+							<ci:personLink uri="{course.lecturer.url}" pageUid="{pSPid}" person="{course.lecturer}">{course.lecturer.fullname}</ci:personLink>
+							<f:if condition="{course.otherLecturers}">
+								<f:for each="{course.otherLecturers}" as="lecturer" iteration="i">
+									<ci:noLecturer lecturer="{course.lecturer}" first="{i.isFirst}">,</ci:noLecturer>
+									<ci:personLink uri="{lecturer.url}" pageUid="{pSPid}" person="{lecturer}">{lecturer.fullname}</ci:personLink>
+								</f:for>
+							</f:if>
+						</td>
+					</tr>
+				</f:cycle>
+				</f:for> 
+			</tbody>
+		</table>		
+	</f:if>
+	</f:for>	
+</f:section>

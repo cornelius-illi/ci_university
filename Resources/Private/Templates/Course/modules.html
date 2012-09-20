@@ -1,0 +1,25 @@
+{namespace ci=Tx_CiUniversity_ViewHelpers}
+<f:layout name="default" />
+
+<f:section name="content">
+	<f:render partial="course_navigation" />
+	<div id="tx-ciuniversity-modules-list">
+	<f:for each="{data}" as="program" key="name">
+		<f:cycle values="{0: 'left', 1: 'right'}" as="zebraClass">
+		<div class="tx-ciuniversity-modules-program-{zebraClass}">
+			<h2>{name}</h2>
+			<f:for each="{program}" as="modulegroups" key="modulegroup">
+				<h3>{modulegroup}</h3>
+				<ul>
+				<f:for each="{modulegroups}" as="module">
+					<li><f:link.page additionalParams="{tx_ciuniversity_ciuniversity: {module: module.uid, program: name} }">{module.title} ({module.courses})
+					</f:link.page><span style="display: none;">{module.uid},{name}</span>
+					</li>
+				</f:for>
+				</ul>
+			</f:for>
+		</div>
+		</f:cycle>
+	</f:for>
+	</div>
+</f:section>

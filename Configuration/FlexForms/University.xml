@@ -1,0 +1,135 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>Plugin-Type</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <switchableControllerActions>
+            <TCEforms>
+              <label>ControllerActions</label>
+              <config>
+              	<type>select</type>
+		        <items type="array">
+					<numIndex index="0" type="array">
+						<numIndex index="0">List Courses</numIndex>
+						<numIndex index="1">Course->index;Course->modules</numIndex>
+					</numIndex>
+					<numIndex index="1" type="array">
+						<numIndex index="0">View Course</numIndex>
+						<numIndex index="1">Course->show</numIndex>
+					</numIndex>
+					<numIndex index="2" type="array">
+						<numIndex index="0">List Persons</numIndex>
+						<numIndex index="1">Person->index</numIndex>
+					</numIndex>
+					<numIndex index="3" type="array">
+						<numIndex index="0">View Person</numIndex>
+						<numIndex index="1">Person->show</numIndex>
+					</numIndex>           				
+				</items>
+				<minitems>0</minitems>
+				<maxitems>1</maxitems>
+				<size>1</size> 
+              </config>
+            </TCEforms>
+          </switchableControllerActions>
+          <settings.useExtJS>
+        		<TCEforms>
+					<label>LLL:EXT:ci_university/Resources/Private/Language/locallang_tca.xml:ci_university.plugin.confExtJS</label>
+					<config>
+						<type>check</type>
+					</config>
+        		</TCEforms>
+        	</settings.useExtJS>
+        </el>
+      </ROOT>
+    </sDEF>
+    <singleViews>
+    	<ROOT>
+    		 <TCEforms>
+      	  		<sheetTitle>LLL:EXT:ci_university/Resources/Private/Language/locallang_tca.xml:ci_university.plugin.confSingle</sheetTitle>
+     		</TCEforms>
+      		<type>array</type>
+    		<el>
+    			<settings.courseSingle>
+					<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ci_university/Resources/Private/Language/locallang_tca.xml:ci_university.plugin.courseSingle</label>
+					<config>
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>pages</allowed>
+						<size>1</size>
+						<maxitems>1</maxitems>
+						<minitems>0</minitems>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					</TCEforms>
+				</settings.courseSingle>
+				<settings.personSingle>
+					<TCEforms>
+					<exclude>1</exclude>
+					<label>LLL:EXT:ci_university/Resources/Private/Language/locallang_tca.xml:ci_university.plugin.personSingle</label>
+					<config>
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>pages</allowed>
+						<size>1</size>
+						<maxitems>1</maxitems>
+						<minitems>0</minitems>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					</TCEforms>
+				</settings.personSingle>
+    		</el>
+    	</ROOT>
+    </singleViews>
+    <courseConfig>
+      <ROOT>
+        <TCEforms>
+      	  <sheetTitle>LLL:EXT:ci_university/Resources/Private/Language/locallang_tca.xml:ci_university.plugin.confCourse</sheetTitle>
+     	</TCEforms>
+      	<type>array</type>
+      	<el>
+	      <settings.chair>
+	  		<TCEforms>
+	  		  <label>Chair</label>
+  		  	  <config>
+           	    <type>select</type>
+           	    <items>
+          	    	<numIndex index="1" type="array">
+						<numIndex index="0">Alle</numIndex>
+						<numIndex index="1">all</numIndex>
+					</numIndex>
+          	    </items>
+           	    <itemsProcFunc>tx_CiUniversity_Utility_ItemsProcFunc->user_getAllChairs</itemsProcFunc>
+				<maxitems>1</maxitems>
+				<size>1</size>
+			  </config>
+	  		</TCEforms>
+	  	  </settings.chair>
+	      <settings.semester>
+	  	    <TCEforms>
+	  		 	<label>Semester</label>
+	  			<config>
+           	    	<type>select</type>
+           	    	<items>
+          	    	<numIndex index="1" type="array">
+						<numIndex index="0">Alle</numIndex>
+						<numIndex index="1">all</numIndex>
+					</numIndex>
+          	    	</items>
+           	    	<itemsProcFunc>tx_CiUniversity_Utility_ItemsProcFunc->user_getAllSemesters</itemsProcFunc>
+					<maxitems>1</maxitems>
+					<size>1</size>
+			  </config>
+	  		</TCEforms>
+	  	</settings.semester>
+	  	</el>
+     </ROOT>
+    </courseConfig>
+  </sheets>
+</T3DataStructure>

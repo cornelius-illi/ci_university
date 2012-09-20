@@ -1,0 +1,14 @@
+plugin.tx_ciuniversity {
+	persistence {
+		 # cat=plugin.tx_ciuniversity//a; type=int+; label=Default storage PID
+		storagePid = 499
+	}
+	view {
+		 # cat=plugin.ci_university/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ci_university/Resources/Private/Templates/
+		 # cat=plugin.ci_university/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ci_university/Resources/Private/Partials/
+		 # cat=plugin.ci_university/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ci_university/Resources/Private/Layouts/
+	}
+}

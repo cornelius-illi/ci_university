@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the University Manager extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Title</label>
+			<label index="lecturer">Lecturer</label>
+			<label index="tutors">Tutors</label>
+			<label index="no_courses">There are no courses available!</label>
+			<label index="description">Description</label>
+			<label index="requirements">Requirements</label>
+			<label index="literature">Literature</label>
+			<label index="examination">Examination</label>
+			<label index="dates">Dates</label>
+			<label index="general_information">General Information</label>
+			<label index="sws">Weekly Hours</label>
+			<label index="ects">Credits</label>
+			<label index="enrolmentDeadline">Enrolment Deadline</label>
+			<label index="program">Program</label>
+			<label index="teachingForm">Teaching Form</label>
+			<label index="enrolmentType">Enrolment Type</label>
+			<label index="modules">Modules</label>
+			<label index="phone">Phone</label>
+			<label index="fax">Fax</label>
+			<label index="room">Room</label>
+			<label index="name">Name</label>
+			<label index="email">E-Mail</label>
+			<label index="chair">Chair</label>
+			<label index="chairs">Chairs</label>
+			<label index="basicInfo">Basic information</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="title">Title</label>
+			<label index="lecturer">Dozent</label>
+			<label index="tutors">Tutoren</label>
+			<label index="no_courses">Es sind keine Lehrveranstaltungen vorhanden!</label>
+			<label index="description">Beschreibung</label>
+			<label index="requirements">Voraussetzungen</label>
+			<label index="literature">Literatur</label>
+			<label index="examination">Leistungserfassung</label>
+			<label index="dates">Termine</label>
+			<label index="general_information">Allgemeine Information</label>
+			<label index="sws">Semesterwochenstunden</label>
+			<label index="ects">ECTS</label>
+			<label index="enrolmentDeadline">Einschreibefrist</label>
+			<label index="program">Programm</label>
+			<label index="teachingForm">Lehrform</label>
+			<label index="enrolmentType">Belegungsart</label>
+			<label index="modules">Module</label>
+			<label index="phone">Telefon</label>
+			<label index="fax">Fax</label>
+			<label index="room">Raum</label>
+			<label index="name">Name</label>
+			<label index="email">E-Mail</label>
+			<label index="chair">Lehrstuhl</label>
+			<label index="chairs">Lehrstühle</label>
+			<label index="basicInfo">Allgemein</label>
+		</languageKey>
+	</data>
+</T3locallang>

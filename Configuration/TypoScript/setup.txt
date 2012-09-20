@@ -1,0 +1,51 @@
+plugin.tx_ciuniversity {
+	settings {
+		sections (
+			Forschung und Lehre, 
+		 	Sekretariat,
+		 	Facility Management,
+		 	Organisation,
+		 	Lehrbeauftragt Universität Potsdam,
+			Studentische Hilfskraft
+		)
+		modulegroups (
+			,
+			Grundlagen IT-Systems Engineering,
+			Softwaretechnik und Modellierung,
+			Mathematische und theoretische Grundlagen,	
+			Softwarebasissysteme,
+			Vertiefungsgebiete,
+			Rechtliche und wirtschaftliche Grundlagen,
+			Softskills,
+			IT-Systems Engineering
+		)
+		courseSinglePid = 5906
+		personSinglePid = 5907
+		itemsPerPage = 20
+		searchModeSelector(
+			ABC,
+			DEF,
+			GHI,
+			JKL,
+			MNO,
+			PQRS,
+			TUV,
+			WXYZ
+		)
+		referToCoursePageText.de (
+			Alle Informationen zu Inhalten, Leistungserfassung und Terminen finden Sie unter folgender Adresse
+		)
+		
+		referToCoursePageText.en (
+			Further information on contents, examination and dates are available here
+		)
+	}
+	view = 
+}
+
+page.includeCSS { 
+	tx_ciuniversity_file_1 = EXT:ci_university/Resources/Public/Styles/university.css
+}
+
+page.includeJS {
+}

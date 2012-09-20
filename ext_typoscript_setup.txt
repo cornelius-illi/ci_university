@@ -1,0 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ci_university/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ci_university/Configuration/TypoScript/setup.txt">
